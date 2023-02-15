@@ -3,7 +3,27 @@
 <head>
   <title>Upload a file to FTP server</title>
 </head>
+<style>
+  body {
+    background-color: #FEEAF1; 
+  }
+  h1 {
+    color: #2176AE; 
+    text-align: center; 
+  }
+  form {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 10vh; 
+  }
+  input[type=file], input[type=submit] {
+    margin: 10px; 
+  }
+</style>
+
 <body>
+<h1>Upload File</h1>
   <?php
     if (isset($_POST['submit'])) {
       // FTP connection settings
